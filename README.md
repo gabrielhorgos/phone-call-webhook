@@ -89,7 +89,7 @@ Install Ngrok :
     - Configure with : Webhooks, TwiML Bins, Functions, Studios, or Proxy
     - A Call Comes in : Webhook 
     - In the input type the ngrok https URL (obtained above)
-    - Select HTTP GET method 
+    - Select HTTP POST method 
 4. Save configuration
 
 

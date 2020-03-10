@@ -3,7 +3,7 @@ package com.essential.programming.phonecallwebhook.controller;
 import com.twilio.twiml.VoiceResponse;
 import com.twilio.twiml.voice.Play;
 import com.twilio.twiml.voice.Say;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.atomic.AtomicInteger;
@@ -13,7 +13,7 @@ public class WebhookController {
 
 	private AtomicInteger callerNumber = new AtomicInteger();
 
-	@GetMapping(path = "/call", produces = "application/xml")
+	@PostMapping(path = "/call", produces = "application/xml")
 	public String respondToPhoneCall() {
 		VoiceResponse.Builder voiceBuilder = new VoiceResponse.Builder();
 
