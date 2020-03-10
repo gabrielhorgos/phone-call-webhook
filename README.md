@@ -93,6 +93,11 @@ Install Ngrok :
 4. Save configuration
 
 
+### Test your webhook
+To test the webhook once all the configurations are done, start the Phone Call Webhook app and call the number you've
+ set up in your Twilio account.
+
+
 
 License
 ----
